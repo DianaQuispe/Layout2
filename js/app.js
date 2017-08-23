@@ -1,48 +1,35 @@
+/*
+ * Archivo principal de funcionalidad de JS
+ */
+var row = document.getElementById("row");
 
-var imgArray= Array.from(document.getElementsByClassName("imagenes"));
-  var images = ["../assets/images/img-1.jpg", "../assets/images/img-2.jpg", "../assets/images/img-3.jpg", "../assets/images/img-4.jpg", "../assets/images/img-5.jpg", "../assets/images/img-6.jpg", "../assets/images/img-7.jpg", "../assets/images/img-8.jpg", "../assets/images/img-9.jpg"];
-var product=document.getElementById("product");
-imgArray.forEach(function(img) {
-    img.addEventListener("click",agregar);
+var images = ["../assets/images/img-1.jpg", "../assets/images/img-2.jpg", "../assets/images/img-3.jpg", "../assets/images/img-4.jpg", "../assets/images/img-5.jpg", "../assets/images/img-6.jpg", "../assets/images/img-7.jpg", "../assets/images/img-8.jpg", "../assets/images/img-9.jpg"];
+for (var o = 0; o < images.length; o++) {
+    var div = document.createElement("div");
+    div.setAttribute("class", "col-4");
+    var crearIM = document.createElement("img");
+    crearIM.setAttribute("src", images[o]);
+    crearIM.setAttribute("onclick", 'iMG()');
+    crearIM.style.cursor = "pointer";
+    crearIM.setAttribute("class", "imagenes");
+    var crearH2 = document.createElement("H2");
+    var textoH2 = document.createTextNode("NOMBRE DEL PROYECTO")
+    crearH2.appendChild(textoH2);
+    div.appendChild(crearIM);
+    div.appendChild(crearH2);
+    row.appendChild(div);
+}
 
-});
-    var images = ["../assets/images/img-1.jpg", "../assets/images/img-2.jpg", "../assets/images/img-3.jpg", "../assets/images/img-4.jpg", "../assets/images/img-5.jpg", "../assets/images/img-6.jpg", "../assets/images/img-7.jpg", "../assets/images/img-8.jpg", "../assets/images/img-9.jpg"];
-
-     for(var i=0; i<images.length; i++) {
-        var index = images[i];
-   var image = document.createElement("img");
-         image.setAttribute(index);
-    }
-function agregar() {
-    var product=document.getElementById("product");
-    var product=document.getElementById("product");S
-    var index;
-
-
-     product=document.getElementById("product");
+function iMG() {
+    alert('hola');
+    body = document.getElementsByTagName("body")[0];
     var divsote = document.createElement("div");
     divsote.setAttribute("id","divG");
+    body.appendChild(divsote);
     var divsito = document.createElement("div");
     divsito.setAttribute("class","divC");
-
-    var nuevospan =document.createElement("span");
-    nuevospan.setAttribute("class","span");
-    var textospan= document.createTextNode("X");
-    nuevospan.addEventListener("click",borrar);
-    nuevospan.appendChild(textospan);
-
-    image.setAttribute("src","../assets/images/img-"+i+".jpg");
-    image.setAttribute("class","image");
-    divsito.appendChild(image);
-    divsito.appendChild(nuevospan);
+    images[o];
     divsote.appendChild(divsito);
-    product.appendChild(divsote);
-
-}
-function borrar() {
-    var nuevospan = document.getElementsByClassName("span");
-    var divsote = document.getElementById('divG');
-    var product=document.getElementById("product");
-    product.removeChild(divsote);
-
+    
+    
 }
