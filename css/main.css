@@ -137,10 +137,11 @@ header {
     height: 100%;
     width: 100%;
     top: 0;
+
 }
 .divC {
     position: absolute;
-    background-color: black;
+    background-color: #3bd2a0;
     top: 10%;
     left: 25%;
     height: 80%;
@@ -161,6 +162,26 @@ header {
 .text-services {
   font-size: 35px;
   letter-spacing: 2px;
+}
+.image{
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    margin: 1%;
+    left: 0;
+    
+}
+.span {
+    cursor: pointer;
+    position: absolute;
+    font-size: 3em;
+    right: 4%;
+    width: auto;
+    color: #3bd2a0;
+}
+.span:hover {
+    color: #3a9175;
+
 }
 
 .imagenes {
