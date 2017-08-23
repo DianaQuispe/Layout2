@@ -6,7 +6,7 @@ imgArray.forEach(function(img) {
 
 function agregar() {
     var product=document.getElementById("product");
-
+    var product=document.getElementById("product");S
     var divsote = document.createElement("div");
     divsote.setAttribute("id","divG");
     var divsito = document.createElement("div");
@@ -14,5 +14,5 @@ function agregar() {
     var image = document.createElement("img");
     divsote.appendChild(divsito);
     product.appendChild(divsote);
-     
+    
 }
