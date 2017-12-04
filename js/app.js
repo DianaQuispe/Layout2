@@ -3,7 +3,7 @@
  */
 var row = document.getElementById("row");
 
-var images = ["../assets/images/img-1.jpg", "../assets/images/img-2.jpg", "../assets/images/img-3.jpg", "../assets/images/img-4.jpg", "../assets/images/img-5.jpg", "../assets/images/img-6.jpg", "../assets/images/img-7.jpg", "../assets/images/img-8.jpg", "../assets/images/img-9.jpg"];
+var images = ["assets/images/img-1.jpg", "assets/images/img-2.jpg", "assets/images/img-3.jpg", "assets/images/img-4.jpg", "assets/images/img-5.jpg", "assets/images/img-6.jpg", "assets/images/img-7.jpg", "assets/images/img-8.jpg", "assets/images/img-9.jpg"];
 for (var o = 0; o < images.length; o++) {
     var div = document.createElement("div");
     div.setAttribute("class", "col-4");
